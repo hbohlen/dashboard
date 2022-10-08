@@ -5,8 +5,7 @@ import {
   ColumnsDirective,
   ColumnDirective,
   Search,
-  Page,
-  Toolbar
+  Page
 } from '@syncfusion/ej2-react-grids';
 
 import { employeesData, employeesGrid } from '../data/dummy';
@@ -34,7 +33,7 @@ const Employees = () => {
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Search, Page, Toolbar]} />
+        <Inject services={[Search, Page]} />
       </GridComponent>
     </div>
   );
